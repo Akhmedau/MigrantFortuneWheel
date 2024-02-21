@@ -1,0 +1,6 @@
+framework module Pods_MigrantFortuneWheel {
+  umbrella header "Pods-MigrantFortuneWheel-umbrella.h"
+
+  export *
+  module * { export * }
+}

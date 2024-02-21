@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5Sb-bR-EPf">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="XT5-AS-kPE">
+            <objects>
+                <viewController id="5Sb-bR-EPf" customClass="ViewController" customModule="MigrantFortuneWheel" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Fpe-aq-4Fz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gpU-4L-M0x">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DGP-x4-roY" customClass="TTFortuneWheel" customModule="TTFortuneWheel">
+                                        <rect key="frame" x="39" y="269" width="336" height="336"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="DGP-x4-roY" secondAttribute="height" multiplier="1:1" id="IdY-94-IAH"/>
+                                        </constraints>
+                                    </view>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wheelFrame" translatesAutoresizingMaskIntoConstraints="NO" id="sO8-hz-WO6">
+                                        <rect key="frame" x="23" y="255.5" width="368" height="385"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="sO8-hz-WO6" secondAttribute="height" multiplier="369:386" id="N1r-ur-2g6"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LeM-7f-eS0">
+                                        <rect key="frame" x="119" y="356" width="176" height="178"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                        <inset key="contentEdgeInsets" minX="0.0" minY="9" maxX="0.0" maxY="0.0"/>
+                                        <inset key="titleEdgeInsets" minX="0.0" minY="-29" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="SPIN" backgroundImage="spin">
+                                            <color key="titleColor" red="0.90196078430000004" green="0.90588235289999997" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="LeM-7f-eS0" firstAttribute="centerX" secondItem="sO8-hz-WO6" secondAttribute="centerX" id="0ys-9Z-Cwj"/>
+                                    <constraint firstItem="DGP-x4-roY" firstAttribute="leading" secondItem="sO8-hz-WO6" secondAttribute="leading" constant="16" id="IRt-56-IQu"/>
+                                    <constraint firstItem="DGP-x4-roY" firstAttribute="width" secondItem="DGP-x4-roY" secondAttribute="height" multiplier="1:1" id="Ttw-dh-mmg"/>
+                                    <constraint firstItem="sO8-hz-WO6" firstAttribute="centerY" secondItem="gpU-4L-M0x" secondAttribute="centerY" id="UA9-hB-c2Y"/>
+                                    <constraint firstItem="sO8-hz-WO6" firstAttribute="centerX" secondItem="gpU-4L-M0x" secondAttribute="centerX" id="Wgu-ur-Nl5"/>
+                                    <constraint firstItem="DGP-x4-roY" firstAttribute="centerX" secondItem="sO8-hz-WO6" secondAttribute="centerX" id="eMN-uW-ktB"/>
+                                    <constraint firstItem="sO8-hz-WO6" firstAttribute="trailing" secondItem="DGP-x4-roY" secondAttribute="trailing" constant="16" id="gPd-zi-NeB"/>
+                                    <constraint firstItem="sO8-hz-WO6" firstAttribute="width" secondItem="sO8-hz-WO6" secondAttribute="height" multiplier="369:386" id="hDf-jV-zNy"/>
+                                    <constraint firstItem="sO8-hz-WO6" firstAttribute="leading" secondItem="gpU-4L-M0x" secondAttribute="leading" constant="23" id="lsL-9V-Nkd"/>
+                                    <constraint firstItem="LeM-7f-eS0" firstAttribute="centerY" secondItem="sO8-hz-WO6" secondAttribute="centerY" constant="-3" id="ty9-nX-fGc"/>
+                                    <constraint firstItem="DGP-x4-roY" firstAttribute="centerY" secondItem="sO8-hz-WO6" secondAttribute="centerY" constant="-11" id="xQb-Z7-50i"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="gpU-4L-M0x" firstAttribute="centerX" secondItem="Fpe-aq-4Fz" secondAttribute="centerX" id="NDF-4x-oA6"/>
+                            <constraint firstItem="gpU-4L-M0x" firstAttribute="top" secondItem="Fpe-aq-4Fz" secondAttribute="topMargin" constant="-44" id="X5M-Fa-Hij"/>
+                            <constraint firstItem="gpU-4L-M0x" firstAttribute="leading" secondItem="Aaa-vp-mWp" secondAttribute="leading" id="n09-WL-r5n"/>
+                            <constraint firstItem="gpU-4L-M0x" firstAttribute="centerY" secondItem="Fpe-aq-4Fz" secondAttribute="centerY" id="veh-B2-MqV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Aaa-vp-mWp"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L5i-Hk-OxA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="47.826086956521742" y="144.64285714285714"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="spin" width="176" height="178"/>
+        <image name="wheelFrame" width="369" height="386"/>
+    </resources>
+</document>
